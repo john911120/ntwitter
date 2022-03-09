@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { authService, firebaseInstance } from "fbase";
-=======
-import { authService } from "fbase";
->>>>>>> 07b37fd179ed6999515344e572911efbd8d70226
 import { useState } from "react";
 
 const Auth = () => {
@@ -42,7 +38,6 @@ const Auth = () => {
 
     const toggleAccount = () => setNewAccount((prev) => !prev)
 
-<<<<<<< HEAD
     const onSocialClick = async (event) => {
         const {
             target : {name},
@@ -57,8 +52,6 @@ const Auth = () => {
         console.log(data);
     }
 
-=======
->>>>>>> 07b37fd179ed6999515344e572911efbd8d70226
     return (
         <div>
             <form onSubmit={onSubmit}>
@@ -85,13 +78,8 @@ const Auth = () => {
                 {newAccount ? "Sign In" : "Create Account"}
             </span>
         <div>
-<<<<<<< HEAD
             <button onClick={onSocialClick} name="google">Continue with Google</button>
             <button onClick={onSocialClick} name="github">Continue with Github</button>
-=======
-            <button>Continue with Google</button>
-            <button>Continue with Github</button>
->>>>>>> 07b37fd179ed6999515344e572911efbd8d70226
         </div>
         </div>
     )
